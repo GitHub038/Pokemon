@@ -14,7 +14,6 @@ import { PokemonTypeColorPipe } from './pokemon/pokemon-type-color.pipe';
     RouterOutlet, 
     BorderCardDirective, 
     PokemonTypeColorPipe, 
-    HttpClientModule,
   ],
   templateUrl: 'app.component.html'
 })
