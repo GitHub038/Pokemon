@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../pokemon';
 import { PokemonTypeColorPipe } from '../pokemon-type-color.pipe';
 import { BorderCardDirective } from '../border-card.directive';
-import { CommonModule } from '@angular/common';
+import { DatePipe, NgFor } from '@angular/common';
 import { Router } from '@angular/router';
 import { PokemonService } from '../pokemon.service';
 import { SearchPokemonComponent } from '../search-pokemon/search-pokemon.component';
@@ -10,7 +10,7 @@ import { SearchPokemonComponent } from '../search-pokemon/search-pokemon.compone
 @Component({
   selector: 'app-list-pokemon',
   standalone: true,
-  imports: [CommonModule, BorderCardDirective, PokemonTypeColorPipe, SearchPokemonComponent],
+  imports: [NgFor, BorderCardDirective, DatePipe, PokemonTypeColorPipe, SearchPokemonComponent],
   templateUrl: './list-pokemon.component.html',
 })
 export class ListPokemonComponent implements OnInit {

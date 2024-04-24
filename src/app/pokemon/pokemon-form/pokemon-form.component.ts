@@ -4,13 +4,13 @@ import { Pokemon } from '../pokemon';
 import { Router } from '@angular/router';
 import { PokemonTypeColorPipe } from '../pokemon-type-color.pipe';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
 import { LoaderComponent } from '../loader/loader.component';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-pokemon-form',
   standalone: true,
-  imports: [PokemonTypeColorPipe, FormsModule, CommonModule, LoaderComponent],
+  imports: [PokemonTypeColorPipe, FormsModule, LoaderComponent, NgIf, NgFor],
   templateUrl: './pokemon-form.component.html',
   styleUrls: ['./pokemon-form.component.css']
 })

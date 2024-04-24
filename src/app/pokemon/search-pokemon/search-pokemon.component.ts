@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 import { Observable, Subject, debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 import { Pokemon } from '../pokemon';
 import { PokemonService } from '../pokemon.service';
-import { CommonModule } from '@angular/common';
+import { AsyncPipe, NgForOf } from '@angular/common';
 
 @Component({
   selector: 'app-search-pokemon',
   standalone: true,
-  imports: [CommonModule],
+  imports: [AsyncPipe, NgForOf],
   templateUrl: './search-pokemon.component.html',
 })
 export class SearchPokemonComponent implements OnInit {
